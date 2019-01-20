@@ -12,6 +12,9 @@ var getInfo ={
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    // chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    //     console.log(tabs);
+    // }); 
     if (request.env == "dev1"){
         console.log("inside if");
         
